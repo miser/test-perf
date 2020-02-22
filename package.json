@@ -1,0 +1,16 @@
+{
+  "name": "test-perf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm isolate-* & rm node-flamegraph-*.svg & rm -rf FlameGraph && node --perf-basic-prof index.js",
+    "clear": "rm isolate-* & rm node-flamegraph-*.svg & rm -rf FlameGraph"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "unzipper": "^0.10.8"
+  }
+}
